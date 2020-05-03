@@ -1,0 +1,96 @@
+.site-header {
+  background-color: rgb(26, 25, 28);
+}
+.site-header a {
+  color: white;
+}
+.userLogo {
+  height: 29px;
+  width: auto;
+}
+.carousel-start {
+  /* background-color: rgb(148, 148, 148); */
+  background: url('bg-img.gif');
+}
+.carousel {
+  height: 100%;
+  width: 1050px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-left: 185px;
+}
+.carousel-inner > .carousel-item > img {
+  width: 300px;
+  height: auto;
+}
+.carousel-item {
+  overflow: hidden;
+}
+.carousel-control-next, .carousel-control-prev {
+  margin-left: 100px;
+  margin-right: 100px;
+  color: black;
+}
+.carousel-item h5 {
+  font-size: 20px;
+}
+.carousel-item p {
+  font-size: 15px;
+}
+.interestingFilms h3 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.interestingFilms > .card-group > .card > img {
+  height: 400px;
+}
+.interestingCartoons{
+  padding-top: 50px;
+}
+.interestingCartoons h3 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.interestingCartoons > .card-group > .card > img {
+  height: 400px;
+}
+.aboutUs {
+  padding-top: 50px;
+}
+.interestingSerials{
+  padding-top: 50px;
+}
+.interestingSerials h3 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.interestingSerials > .card-group > .card > img {
+  height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: rgb(26, 25, 28);
+}
+.footer a {
+  color: yellow;
+}
+.footer h5 {
+  color: white;
+}
