@@ -1,0 +1,23 @@
+.videoPlayer {
+  padding-left: 120px;
+  padding-top: 30px;
+}
+.descriptionFilms {
+  width: 900px;
+}
+.descriptionFilms > .row > .col-md-8 > .card,
+.descriptionFilms > .row > .col-md-4 > .card {
+  border: none;
+}
+.descriptionFilms {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.comments {
+  width: 900px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background: rgba(214, 212, 176);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
