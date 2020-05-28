@@ -1,6 +1,6 @@
 <div class="videoPlayer container">
-  <h3>Джокер</h3>
-  <video autoplay controls muted src="/assets/videos/joker.mp4" width="900px" id="videoTrailer">
+  <h3>{{films.title}}</h3>
+  <video autoplay controls muted src={{films.videoSrc}} width="900px" id="videoTrailer">
   </video>
 </div>
 
@@ -10,7 +10,7 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Описание</h5>
-        <p class="card-text">Готэм, начало 1980-х годов. Комик Артур Флек живет с больной матерью, которая с детства учит его «ходить с улыбкой». Пытаясь нести в мир хорошее и дарить людям радость, Артур сталкивается с человеческой жестокостью и постепенно приходит к выводу, что этот мир получит от него не добрую улыбку, а ухмылку злодея Джокера.</p>
+        <p class="card-text">{{films.description}}</p>
       </div>
     </div>
   </div>
@@ -18,9 +18,8 @@
     <div class="card">
       <div class="card-body">
         <ul>
-          <li><strong>Слоган: </strong>«Сделай счастливое лицо»</li>
-          <li><strong>Год: </strong>2019</li>
-          <li><strong>Жанр: </strong>	Триллеры, Драмы, Криминал</li>
+          <li><strong>Год: </strong>{{films.year}}</li>
+          <li><strong>Жанр: </strong>{{films.genres}}</li>
           <li><strong>Бюджет: </strong>$55 000 000</li>
         </ul>
       </div>

@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'website';
   userLogo:string = "assets/img/userLogo.png"
-
+  bgPage:string = 'assets/img/bgImage.jpg'
 }

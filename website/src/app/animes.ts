@@ -1,4 +1,4 @@
-export interface Films {
+export interface Animes {
     id: number,
     title: string;
     year: number;

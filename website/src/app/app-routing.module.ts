@@ -12,13 +12,13 @@ import { AnimeDetailsComponent } from './anime-details/anime-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'film-details', component: FilmDetailsComponent },
+  { path: 'film-details/:id', component: FilmDetailsComponent },
   { path: 'home', component: HomeComponent },
   { path: 'registration', component: RegistrationComponent},
   { path: 'authorization', component: AuthorizationComponent},
-  { path: 'serial-details', component: SerialDetailsComponent},
-  { path: 'cartoon-details', component: CartoonDetailsComponent},
-  { path: 'anime-details', component: AnimeDetailsComponent}
+  { path: 'serial-details/:id', component: SerialDetailsComponent},
+  { path: 'cartoon-details/:id', component: CartoonDetailsComponent},
+  { path: 'anime-details/:id', component: AnimeDetailsComponent}
 
 ];
 
