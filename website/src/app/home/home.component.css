@@ -34,21 +34,31 @@
 .carousel-item p {
   font-size: 15px;
 }
+.interestingFilms > .card-deck > .card {
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
 .interestingFilms h3 {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.interestingFilms > .card-group > .card > img {
+.interestingFilms > .card-deck > .card > img {
   height: 400px;
 }
-.interestingCartoons{
+.interestingCartoons {
   padding-top: 50px;
+}
+.interestingCartoons > .card-deck > .card {
+  justify-content: center;
+  align-items: center;
+  border: none;
 }
 .interestingCartoons h3 {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.interestingCartoons > .card-group > .card > img {
+.interestingCartoons > .card-deck > .card > img {
   height: 400px;
 }
 .aboutUs {
@@ -57,21 +67,31 @@
 .interestingSerials{
   padding-top: 50px;
 }
+.interestingSerials > .card-deck > .card {
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
 .interestingSerials h3 {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.interestingSerials > .card-group > .card > img {
+.interestingSerials > .card-deck > .card > img {
   height: 400px;
 }
 .interestingAnime{
   padding-top: 50px;
   margin-bottom: 30px;
 }
+.interestingAnime > .card-deck > .card {
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
 .interestingAnime h3 {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.interestingAnime > .card-group > .card > img {
+.interestingAnime > .card-deck > .card > img {
   height: 400px;
 }
