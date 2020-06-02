@@ -1,10 +1,44 @@
-<div class="videoPlayer container">
-  <h3>{{films.title}}</h3>
-  <video autoplay controls muted src={{films.videoSrc}} width="900px" id="videoTrailer">
-  </video>
+<div class="playerAndPoster row">
+  <div class="imgPoster col-md-4">
+    <img src={{films.imgSrc}} alt="poster image">
+  </div>
+  <div class="videoPlayer col-md-8">
+    <video src={{films.videoSrc}} autoplay muted controls width="900px">
+    </video>
+  </div>
 </div>
 
-<div class="descriptionFilms container">
+<div class="about container">
+  <div class="box">
+    <div class="info">
+      <div class="title">
+          <div class="ru">{{films.title}}»</div>
+      </div>
+      <div class="genres field">
+          <h5>Жанры:</h5>
+          <p>{{films.genres}}</p>
+      </div>
+      <div class="year field">
+          <h5>Год:</h5>
+          <p>{{films.year}}</p>
+      </div>
+      <div class="description field">
+          <h4>Описание</h4>
+          <p>{{films.description}}</p>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<!-- <img src="assets/img/poster/poster4.jpg" alt="">
+<div class="videoPlayer container-fluid">
+  <video autoplay controls muted src='assets/videos/jo2ker.mp4' width="900px" id="videoTrailer">
+  </video>
+</div> -->
+
+<!-- <div class="descriptionFilms container">
+  <h3>Joker</h3>
   <div class="row">
   <div class="col-md-8">
     <div class="card">
@@ -26,7 +60,8 @@
     </div>
   </div>
 </div>
-</div>
+</div> -->
+
 
 <div class="comments container ">
   <div class="commentsBorder media">
