@@ -1,34 +1,33 @@
-<div class="videoPlayer container">
-  <h3>Очень странные дела</h3>
-  <video autoplay controls muted src="/assets/videos/stranger-thingss.mp4" width="900px" id="videoTrailer">
-  </video>
+<div class="playerAndPoster container-fluid row">
+  <div class="imgPoster col-md-4">
+    <img src={{serials.imgSrc}} alt="poster image">
+  </div>
+  <div class="videoPlayer col-md-8">
+    <video src={{serials.videoSrc}}  muted controls width="900px">
+    </video>
+  </div>
 </div>
 
-<div class="descriptionFilms container">
-  <div class="row">
-  <div class="col-md-8">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Описание</h5>
-        <p class="card-text">Действия сериала происходят в ноябре 1983 года в небольшом провинциальном городке Хоукинс, расположенном в штате Индиана, где в местной лаборатории, принадлежащей департаменту энергетики США, таинственным образом пропадает один из сотрудников.
-Спустя некоторое время спокойствие тихого городка нарушает еще одно загадочное исчезновение двенадцатилетнего паренька по имени Уилл, который, заигравшись с друзьями, возвращался поздно вечером домой, проезжая на велосипеде по территории, принадлежавшей той самой лаборатории. На следующее утро, подозревая, что с сыном что-то произошло, обеспокоенная мать, позвонив семье друга и выяснив, что ребенка там нет, сразу же обращается в полицию, надеясь, что они помогут отыскать пропавшего мальчика.
-Однако, узнав о пропаже товарища, друзья Уилла решают не оставаться в стороне и начинают собственное расследование. Встретившись в десять часов вечера, парни отправляются по предполагаемому маршруту, которым мог возвращаться пропавший друг. Бредя тёмной ночью под проливным дождем, едва пересиливая страх, друзья внезапно встречают посреди леса странную девочку. Очень скоро наши герои начинают подозревать, что в городе происходит что-то странное…</p>
+<div class="about container-fluid">
+  <div class="box">
+    <div class="info">
+      <div class="title">
+          <div class="ru">{{serials.title}}</div>
       </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <ul>
-          <li><strong>Слоган: </strong>	«The world is turning upside down»</li>
-          <li><strong>Год: </strong>2016</li>
-          <li><strong>Жанр: </strong>	Триллеры, Драмы, Ужасы, Фантастика, Детективы, Фэнтези</li>
-          <li><strong>Бюджет: </strong>$48 000 000</li>
-        </ul>
+      <div class="genres field">
+          <h5>Жанры:</h5>
+          <p>{{serials.genres}}</p>
       </div>
-    </div>
-  </div>
-</div>
+      <div class="year field">
+          <h5>Год:</h5>
+          <p>{{serials.year}}</p>
+      </div>
+      <div class="description field">
+          <h4>Описание</h4>
+          <p>{{serials.description}}</p>
+          </div>
+        </div>
+      </div>
 </div>
 
 <div class="comments container ">

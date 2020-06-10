@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-.bground > img{
+.bground > img {
   width: 100%;
   height: 100%;
 }
@@ -16,7 +16,6 @@
   height: 29px;
   width: auto;
 }
-
 .dropdown-menu > a {
   color: black;
 }

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { Serials } from '../serial-service/serials';
+import { SerialsService } from '../serial-service/serials.service';
 
 @Component({
   selector: 'app-serial-details',
@@ -7,11 +11,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SerialDetailsComponent implements OnInit {
 
+  serials: Serials;
+
   commentsLogo:string = "assets/img/commentLogo.png"
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private serialsService: SerialsService
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getSerials();
   }
 
+  getSerials(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.serialsService.getSerials(id)
+      .subscribe(serials => this.serials = serials);
+  }
 }

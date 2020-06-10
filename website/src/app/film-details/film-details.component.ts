@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { Films } from '../films';
-import { FilmsService } from '../films.service';
+import { Films } from '../film-service/films';
+import { FilmsService } from '../film-service/films.service';
 
 @Component({
   selector: 'app-film-details',
@@ -17,22 +17,16 @@ export class FilmDetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private movieService: FilmsService,
-    private location: Location
-  ) { }
+    private filmsService: FilmsService
+    ) { }
 
   ngOnInit() {
-
+    this.getFilms();
   }
-  //
-  // getFilms(): void {
-  //   const id = +this.route.snapshot.paramMap.get('id');
-  //   this.filmsService.getFilms(id)
-  //     .subscribe(films => this.films = films);
-  // }
-  //
-  // goBack(): void {
-  //   this.location.back();
-  // }
 
+  getFilms(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.filmsService.getFilms(id)
+      .subscribe(films => this.films = films);
+  }
 }

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { Animes } from '../anime-service/animes';
+import { AnimesService } from '../anime-service/animes.service';
 
 @Component({
   selector: 'app-anime-details',
@@ -7,11 +11,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnimeDetailsComponent implements OnInit {
 
+  animes: Animes;
+
   commentsLogo:string = "assets/img/commentLogo.png"
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private animesService: AnimesService
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getAnimes();
   }
 
+  getAnimes(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.animesService.getAnimes(id)
+      .subscribe(animes => this.animes = animes);
+  }
 }

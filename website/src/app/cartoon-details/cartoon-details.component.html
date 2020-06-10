@@ -1,32 +1,33 @@
-<div class="videoPlayer container">
-  <h3>Суперсемейка 2</h3>
-  <video autoplay controls muted src="/assets/videos/supersemeikas.mp4" width="900px" id="videoTrailer">
-  </video>
+<div class="playerAndPoster container-fluid row">
+  <div class="imgPoster col-md-4">
+    <img src={{cartoons.imgSrc}} alt="poster image">
+  </div>
+  <div class="videoPlayer col-md-8">
+    <video src={{cartoons.videoSrc}}  muted controls width="900px">
+    </video>
+  </div>
 </div>
 
-<div class="descriptionFilms container">
-  <div class="row">
-  <div class="col-md-8">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Описание</h5>
-        <p class="card-text">Чтобы вернуть доверие общества к супергероям, давний кумир семьи Парр - миллиардер Уинстон Дивор - намеревается организовать шумную пиар-кампанию с участием Эластики. Гибкая женщина отлично смотрится в кадре, а вот Боб не слишком подходит для этой роли. И теперь мистеру Исключительному приходится сидеть дома и воспитывать детей, пока его жена гоняется за преступниками. Но уже приближается момент, когда миру вновь потребуются все члены суперсемейства без исключения – появился могущественный враг, с которым может справиться только сплоченная команда героев.</p>
+<div class="about container-fluid">
+  <div class="box">
+    <div class="info">
+      <div class="title">
+          <div class="ru">{{cartoons.title}}</div>
       </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <ul>
-          <li><strong>Слоган: </strong>«It's been too long, dahlings»</li>
-          <li><strong>Год: </strong>2018</li>
-          <li><strong>Жанр: </strong>Боевики, Приключения, Фантастика, Комедии, Семейные</li>
-          <li><strong>Бюджет: </strong>$200 000 000</li>
-        </ul>
+      <div class="genres field">
+          <h5>Жанры:</h5>
+          <p>{{cartoons.genres}}</p>
       </div>
-    </div>
-  </div>
-</div>
+      <div class="year field">
+          <h5>Год:</h5>
+          <p>{{cartoons.year}}</p>
+      </div>
+      <div class="description field">
+          <h4>Описание</h4>
+          <p>{{cartoons.description}}</p>
+          </div>
+        </div>
+      </div>
 </div>
 
 <div class="comments container ">

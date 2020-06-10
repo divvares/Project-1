@@ -1,32 +1,33 @@
-<div class="videoPlayer container">
-  <h3>Восхождение героя щита</h3>
-  <video autoplay controls muted src="/assets/videos/shield-hero.mp4" width="900px" id="videoTrailer">
-  </video>
+<div class="playerAndPoster container-fluid row">
+  <div class="imgPoster col-md-4">
+    <img src={{animes.imgSrc}} alt="poster image">
+  </div>
+  <div class="videoPlayer col-md-8">
+    <video src={{animes.videoSrc}}  muted controls width="900px">
+    </video>
+  </div>
 </div>
 
-<div class="descriptionFilms container">
-  <div class="row">
-  <div class="col-md-8">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Описание</h5>
-        <p class="card-text">История повествует о параллельном мире «Мельмарк», которое постоянно подвергается атакам темных сил. Для сохранения баланса между мирами, в нашу вселенную был послан призыв о помощи. В ответ на зов в фантастические края отправляются четыре героя из современной Японии, где персонажи овладевают легендарными видами оружия: мечом, копьем, луком и щитом.
-В параллельном мире, из-за отсутствия атакующих возможностей своего оружия, «Герой Щита» оказывается самым слабым персонажем. Отаку Наофуми Иватани располагает к себе только одного союзника, прекрасную принцессу Мальти Мельромарк. Однако вскоре она предает Наофуми, украв все богатства, и заявляет, что была похищена и изнасилована им.
-За его предполагаемые преступления Наофуми воспринимается обществом как изгой и злодей. С ненавистью, наполняющей его сердце, он остается один и клянется отомстить всем, кто его оклеветал.</p>
+<div class="about container-fluid">
+  <div class="box">
+    <div class="info">
+      <div class="title">
+          <div class="ru">{{animes.title}}</div>
       </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <ul>
-          <li><strong>Год: </strong>2018</li>
-          <li><strong>Жанр: </strong>Фэнтези, Приключения, Романтические</li>
-        </ul>
+      <div class="genres field">
+          <h5>Жанры:</h5>
+          <p>{{animes.genres}}</p>
       </div>
-    </div>
-  </div>
-</div>
+      <div class="year field">
+          <h5>Год:</h5>
+          <p>{{animes.year}}</p>
+      </div>
+      <div class="description field">
+          <h4>Описание</h4>
+          <p>{{animes.description}}</p>
+          </div>
+        </div>
+      </div>
 </div>
 
 <div class="comments container ">
